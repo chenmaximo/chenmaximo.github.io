@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的作品集 | My Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        h1 {
+            font-size: 2.5rem;
+            color: #222;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            font-size: 1.1rem;
+            color: #666;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 25px;
+        }
+        .item {
+            background: #fff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+        }
+        .media-wrapper {
+            width: 100%;
+            height: 220px;
+            overflow: hidden;
+            background: #eee;
+        }
+        .media-wrapper img,
+        .media-wrapper video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .info {
+            padding: 18px;
+        }
+        .title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 6px;
+            color: #222;
+        }
+        .desc {
+            font-size: 0.9rem;
+            color: #666;
+        }
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 1px solid #eee;
+            color: #999;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>我的作品集</h1>
+            <p class="subtitle">My Creative Portfolio</p>
+        </header>
+
+        <div class="gallery">
+            <!-- 图片作品示例 -->
+            <div class="item">
+                <div class="media-wrapper">
+                    <img src="作品封面1.jpg" alt="作品封面1">
+                </div>
+                <div class="info">
+                    <div class="title">作品名称 1</div>
+                    <div class="desc">作品描述或备注信息</div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="media-wrapper">
+                    <img src="作品封面2.jpg" alt="作品封面2">
+                </div>
+                <div class="info">
+                    <div class="title">作品名称 2</div>
+                    <div class="desc">作品描述或备注信息</div>
+                </div>
+            </div>
+
+            <!-- 视频作品示例 -->
+            <div class="item">
+                <div class="media-wrapper">
+                    <video controls poster="视频封面1.jpg">
+                        <source src="作品视频1.mp4" type="video/mp4">
+                        您的浏览器不支持视频播放。
+                    </video>
+                </div>
+                <div class="info">
+                    <div class="title">视频作品 1</div>
+                    <div class="desc">视频作品的描述信息</div>
+                </div>
+            </div>
+
+            <!-- 你可以复制更多 .item 块来添加更多作品 -->
+        </div>
+
+        <footer>
+            &copy; 2026 我的作品集 | Built with GitHub Pages
+        </footer>
+    </div>
+</body>
+</html>
